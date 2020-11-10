@@ -13,13 +13,6 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- task: GetConjurSecret@1
-  inputs:
-    conjurapplianceurl: 'https://dapmaster-dev.demolab.local'
-    conjuraccount: 'MyDemo'
-    conjurusername: 'joe'
-    conjurapikey: 'fsdfsdfsfsfsf34324324234234'
-    ignoreSsl: true
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.

@@ -18,6 +18,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
 - task: GetConjurSecret@1
   inputs:
     conjurapplianceurl: 'https://dapmasterdev.sytes.net'
@@ -27,6 +28,6 @@ steps:
     ignoreSsl: true
     
 - script: |
-    echo $(Azure_Key_ID)
-    echo $(Azure_Secret_Key)
+    echo Azure Key ID = $(Azure_Key_ID)
+    echo Azure Secret = $(Azure_Secret_Key)
   displayName: 'Echo Secret from Variables'

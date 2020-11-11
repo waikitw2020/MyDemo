@@ -21,9 +21,9 @@ steps:
 
 - task: GetConjurSecret@1
   inputs:
-    conjurapplianceurl: 'https://dapmasterdev.sytes.net'
-    conjuraccount: 'mycompany'
-    conjurusername: 'jolly'
+    conjurapplianceurl: $(Conjur.URL)
+    conjuraccount: $(Conjur.Account)
+    conjurusername: $(Conjur.User)
     conjurapikey: $(Conjur.API)
     ignoreSsl: true
     

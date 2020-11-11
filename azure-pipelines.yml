@@ -28,6 +28,6 @@ steps:
     ignoreSsl: true
     
 - script: |
-    echo Azure Key ID = $(AzureU)
-    echo Azure Secret = $(AzureP)
+    echo Azure Key ID = $(AzID)
+    echo Azure Secret = $(AzSct)
   displayName: 'Echo Secret from Variables'

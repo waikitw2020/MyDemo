@@ -29,6 +29,6 @@ steps:
     
 - bash: |
     echo "Using an input-macro works: $(nonSecretVariable)"
-    echo "Using the env var directly does not work: $(AzureAPI)
+    echo "Using the env var directly does not work: $(AzureAPI)"
   
 

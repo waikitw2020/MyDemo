@@ -27,8 +27,12 @@ steps:
     conjurapikey: '18n8nm52pt6xy02bbxs5a3b6gepmng6d5n2r3q9f4yd028b2v7chmq'
     ignoreSsl: true
     
-- script: |
-    echo ID = $(nonSecretVariable)
-    echo Secret = $(AzSct)
-  displayName: 'Echo Secret from Variables'
+- bash: |
+    echo "Using an input-macro works: $(nonSecretVariable)"
+    echo "Using the env var directly does not work: $nonSecretVariable"
+    echo "Using a global secret var mapped in the pipeline does not work either: $nonSecretVariable"
+    echo "Using a global non-secret var mapped in the pipeline works: $nonSecretVariable" 
+    echo "Using the mapped env var for this task works and is recommended: $MY_MAPPED_ENV_VAR"
+  env:
+    MY_MAPPED_ENV_VAR: $(mySecret)
 

@@ -28,6 +28,9 @@ steps:
     ignoreSsl: true
     
 - script: |
-    echo ID = $(AzID)
+    echo ID = $(MY_MAPPED_ENV_VAR)
     echo Secret = $(AzSct)
   displayName: 'Echo Secret from Variables'
+
+env:
+    MY_MAPPED_ENV_VAR: $(AzID)

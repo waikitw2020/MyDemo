@@ -24,11 +24,11 @@ steps:
     conjurapplianceurl: 'https://dapmasterdev.sytes.net'
     conjuraccount: 'mycompany'
     conjurusername: 'jolly'
-    conjurapikey: '18n8nm52pt6xy02bbxs5a3b6gepmng6d5n2r3q9f4yd028b2v7chmq'
+    conjurapikey: $(ConjurAPI)
     ignoreSsl: true
     
 - bash: |
-    echo "Using an input-macro works: $(nonSecretVariable)"
-    echo "Using the env var directly does not work: $(AzureAPI)"
+    echo "The Secret is: $(AzureAPI)"
+  
   
 

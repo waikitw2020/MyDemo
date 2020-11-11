@@ -29,10 +29,6 @@ steps:
     
 - bash: |
     echo "Using an input-macro works: $(nonSecretVariable)"
-    echo "Using the env var directly does not work: $AzureAPI
-    echo "Using a global secret var mapped in the pipeline does not work either: $nonSecretVariable"
-    echo "Using a global non-secret var mapped in the pipeline works: $nonSecretVariable" 
-    echo "Using the mapped env var for this task works and is recommended: $MY_MAPPED_ENV_VAR"
-  env:
-    MY_MAPPED_ENV_VAR: $(mySecret)
+    echo "Using the env var directly does not work: $(AzureAPI)
+  
 

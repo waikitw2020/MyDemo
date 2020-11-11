@@ -26,7 +26,7 @@ steps:
     conjurapikey: '18n8nm52pt6xy02bbxs5a3b6gepmng6d5n2r3q9f4yd028b2v7chmq'
     ignoreSsl: true
     
-- script: 
-    echo $Azure_Key_ID
-    echo $Azure_Secret_Key
+- script: |
+    echo $(Azure_Key_ID)
+    echo $(Azure_Secret_Key)
   displayName: 'Echo Secret from Variables'

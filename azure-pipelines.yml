@@ -24,7 +24,7 @@ steps:
     conjurapplianceurl: 'https://dapmasterdev.sytes.net'
     conjuraccount: 'mycompany'
     conjurusername: 'jolly'
-    conjurapikey: $(ConjurAPI)
+    conjurapikey: $(CONJURAPI)
     ignoreSsl: true
     
 - bash: |

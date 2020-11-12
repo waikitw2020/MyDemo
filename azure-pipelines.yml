@@ -27,13 +27,12 @@ steps:
     echo Target Password: $(TargetPassword)
   displayName: 'Output Secret in Secure Form'
   
-- task: Bash@3
+- task: SSH@0
   inputs:
-    targetType: 'inline'
-    script: |
-      hostname
-      whoami
-     
+    sshEndpoint: 'MyWebServer'
+    runOptions: 'commands'
+    commands: 'hostname'
+    readyTimeout: '20000'
 
 - task: sftpupload@1
   inputs:

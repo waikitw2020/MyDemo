@@ -38,7 +38,7 @@ steps:
     username: '$(TargetUserID)'
     password: '$(TargetPassword)'
 
-- task: sftpupload@2
+- task: sftpupload@1
   inputs:
     sourceFolder: './'
     contents: '**/index.html'

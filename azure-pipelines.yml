@@ -23,7 +23,8 @@ steps:
     ignoreSsl: true
     
 - bash: |
-    echo The Secret is: $(AzureAPI)
+    echo Target Username: $(TargetUserID)
+    echo Target Password: $(TargetPassword)
   displayName: 'Output Secret in Secure Form'
   
 

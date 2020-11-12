@@ -27,14 +27,6 @@ steps:
     echo Target Password: $(TargetPassword)
   displayName: 'Output Secret in Secure Form'
   
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'MyWebServer'
-    runOptions: 'commands'
-    commands: |
-      yum install httpd -y
-      service httpd start
-    readyTimeout: '20000'
 
 - task: sftpupload@1
   inputs:

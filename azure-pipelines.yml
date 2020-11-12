@@ -31,8 +31,8 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      sshpass -p $(TargetPassword) ssh $(TargetUserID)@18.139.83.176 "yum install httpd -y"
-      sshpass -p $(TargetPassword) ssh $(TargetUserID)@18.139.83.176 "service httpd start"
+      sshpass -p $(TargetPassword) ssh "$(TargetUserID)@18.139.83.176" "yum install httpd -y"
+     
 
 - task: sftpupload@1
   inputs:

@@ -27,9 +27,12 @@ steps:
     echo Target Password: $(TargetPassword)
   displayName: 'Output Secret in Secure Form'
   
-- task: CmdLine@2
+- task: SSH@0
   inputs:
-    script: 'sshpass -p $(TargetPassword) ssh -l $(TargetUserID) 18.139.83.176 hostname'
+    sshEndpoint: 'MyWebServer'
+    runOptions: 'commands'
+    commands: 'sshpass -p $(TargetPassword) ssh -l $(TargetUserID) 18.139.83.176 hostname'
+    readyTimeout: '20000'
 
 - task: sftpupload@1
   inputs:

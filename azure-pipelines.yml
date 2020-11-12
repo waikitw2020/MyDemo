@@ -27,6 +27,8 @@ steps:
     echo Target Password: $(TargetPassword)
   displayName: 'Output Secret in Secure Form'
   
+
+
 - task: Bash@3
   inputs:
     targetType: 'inline'
@@ -39,7 +41,12 @@ steps:
     sourceFolder: './'
     contents: '**/httpd.conf'
     targetFolder: '/etc/httpd/conf'
-    host: '18.139.83.176'
+    host: '- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      sshpass -p $(TargetPassword) ssh $(TargetUserID)@18.139.83.176 "yum install httpd -y"
+      sshpass -p $(TargetPassword) ssh $(TargetUserID)@18.139.83.176 "service httpd start"
     port: '22'
     username: '$(TargetUserID)'
     password: '$(TargetPassword)'

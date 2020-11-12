@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+   - name: Content Update
+     copy:
+       dest: /tmp/nano5.conf
+       content: "Welcome to CDE Ansible Session. Congratulations for completing
+it"

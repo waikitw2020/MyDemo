@@ -29,8 +29,7 @@ steps:
   
 - task: Bash@3
   inputs:
-    targetType: 'inline'
-    script: "sshpass -p $(TargetPassword) ssh $(TargetUserID)@18.139.83.176 hostname"
+    filePath: '**/test.sh'
      
 
 - task: sftpupload@1

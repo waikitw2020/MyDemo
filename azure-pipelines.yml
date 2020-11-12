@@ -31,7 +31,7 @@ steps:
 - task: sftpupload@1
   inputs:
     sourceFolder: './'
-    contents: '**/*.test'
+    contents: '**/*.txt'
     targetFolder: '/tmp'
     host: '18.139.83.176'
     port: '22'

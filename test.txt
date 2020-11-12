@@ -1,0 +1,71 @@
+[21/10/2020 | 10:14:18.173263] | {pid= 5468} | {tid=     3420} |  ::  | PASWS001E Error occurred: Invalid URI: The hostname could not be parsed.
+[21/10/2020 | 10:14:18.173641] | {pid= 5468} | {tid=     3420} |  ::  | System.UriFormatException: Invalid URI: The hostname could not be parsed.
+ at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+ at System.Net.WebRequest.Create(String requestUriString)
+ at CyberArk.PasswordVault.PASWebServices.Controllers.PTAController.createRequest(JObject body)
+ at CyberArk.PasswordVault.PASWebServices.Controllers.PTAController.getResponse(JObject body)
+ at CyberArk.PasswordVault.PASWebServices.Controllers.PTAController.executeRequest(JObject body)
+ at CyberArk.PasswordVault.PASWebServices.Controllers.PTAController.GetRequest()
+ at lambda_method(Closure , Object , Object[] )
+ at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+ at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+ --- End of stack trace from previous location where exception was thrown ---
+ at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+ at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+ at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()

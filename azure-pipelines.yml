@@ -29,7 +29,7 @@ steps:
   displayName: 'Secret Variables Output'
    
 - task: sftpupload@1
-  displayName: 'SFTP Upload'
+  displayName: 'Uploading Files to Remote Server'
   inputs:
     sourceFolder: './'
     contents: |

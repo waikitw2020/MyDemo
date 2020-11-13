@@ -11,8 +11,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, Welcome to My Demo!
-  displayName: 'Run a one-line script'
+- script: echo Just A Simple Secrets Retrieval Demo!
+  displayName: 'Connecting to Conjur Vault'
 
 - task: GetConjurSecret@1
   displayName: 'Get Secrets From Conjur DAP'

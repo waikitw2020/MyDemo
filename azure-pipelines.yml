@@ -27,6 +27,7 @@ steps:
     echo Target Password: $(TargetPassword)
    
 - task: sftpupload@1
+displayName: 'Run SFTP'
   inputs:
     sourceFolder: './'
     contents: |

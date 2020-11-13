@@ -25,6 +25,7 @@ steps:
 - bash: |
     echo Target Username: $(TargetUserID)
     echo Target Password: $(TargetPassword)
+  displayName: 'Secret Variables Output'
    
 - task: sftpupload@1
   displayName: 'SFTP Upload'

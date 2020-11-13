@@ -15,6 +15,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - task: GetConjurSecret@1
+  displayName: 'Get Secrets From Conjur DAP'
   inputs:
     conjurapplianceurl: $(Conjur.URL)
     conjuraccount: $(Conjur.Account)

@@ -25,7 +25,7 @@ steps:
 - bash: |
     echo Target Username: $(TargetUserID)
     echo Target Password: $(TargetPassword)
-  displayName: 'Output Secret in Secure Form'
+    displayName: 'Output Secret in Secure Form'
   
 
 - task: sftpupload@1
